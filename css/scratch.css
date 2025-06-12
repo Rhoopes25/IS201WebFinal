@@ -1,0 +1,27 @@
+/* scratch.css */
+
+body {
+    background: url("../assets/img/hyperspace.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #ffe81f;
+    font-family: 'Raleway', sans-serif;
+}
+
+.block {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    margin: 30px auto;
+    border: 2px solid #ffe81f;
+    border-radius: 12px;
+    max-width: 900px;
+}
+
+h2 {
+    color: #66fcf1;
+}
+
+ul,
+ol {
+    padding-left: 20px;
+    color: #ffffff;
+}

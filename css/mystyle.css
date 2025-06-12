@@ -1,3 +1,168 @@
-.red-header {
-    color: red;
+/* mystyle.css */
+
+
+/* --- Custom Star Wars Navbar --- */
+
+
+/* --- Force Custom Star Wars Navbar --- */
+
+#mainNav.navbar-dark {
+    background-color: rgba(15, 15, 20, 0.95) !important;
+    /* Deep space black with slight transparency */
+    border-bottom: 2px solid #ffe81f;
+    box-shadow: 0 0 10px rgba(255, 232, 31, 0.4);
+}
+
+#mainNav.navbar-dark .navbar-brand,
+#mainNav.navbar-dark .nav-link {
+    color: #ffe81f !important;
+    /* Yellow text */
+    font-weight: bold;
+}
+
+#mainNav.navbar-dark .nav-link:hover {
+    color: #66fcf1 !important;
+    /* Teal hover */
+    text-shadow: 0 0 5px #66fcf1;
+}
+
+
+/* Overall Theme */
+
+body {
+    background: url("../assets/img/hyperspace.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #e5e5e5;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* Header Titles */
+
+h1,
+h2,
+h3,
+.section-heading-upper,
+.section-heading-lower {
+    color: #ffe81f;
+    /* Star Wars yellow */
+    font-family: 'Lora', serif;
+}
+
+
+/* Ensure “Star Wars” header is yellow */
+
+.site-heading-lower {
+    color: #ffe81f !important;
+}
+
+
+/* Fix for "Explore the Dark Side" */
+
+.intro-text .section-heading-lower {
+    color: #ffe81f !important;
+}
+
+
+/* Links */
+
+a {
+    color: #45a29e;
+}
+
+a:hover {
+    color: #66fcf1;
+}
+
+
+/* Buttons */
+
+.btn-primary {
+    background-color: #c3073f;
+    border-color: #c3073f;
+}
+
+.btn-primary:hover {
+    background-color: #950740;
+    border-color: #950740;
+}
+
+
+/* Intro Section Box */
+
+.intro-text {
+    background-color: rgba(28, 28, 30, 0.85) !important;
+    /* charcoal black with slight transparency */
+    border: 1px solid #ffe81f;
+    box-shadow: 0 0 10px rgba(255, 232, 31, 0.5);
+}
+
+
+/* Outer CTA Section Box */
+
+.page-section.cta {
+    background-color: #0e0e11;
+    padding: 60px 0;
+}
+
+
+/* Inner CTA Box */
+
+.cta-inner {
+    background-color: rgba(28, 28, 30, 0.85) !important;
+    /* charcoal black with slight transparency */
+    border: 1px solid #ffe81f;
+    box-shadow: 0 0 10px rgba(255, 232, 31, 0.5);
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #1f2833;
+    color: #e5e5e5;
+}
+
+
+/* Nav */
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffe81f;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #66fcf1;
+}
+
+
+/* Utility Blocks */
+
+.force-section {
+    background-color: #1c1c1e;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 800px;
+    border: 1px solid #ffe81f;
+}
+
+.light-side {
+    border-left: 6px solid #66fcf1;
+    padding-left: 15px;
+}
+
+.dark-side {
+    border-left: 6px solid #c3073f;
+    padding-left: 15px;
+}
+
+
+/* List Styling */
+
+ol.star-list li {
+    font-weight: bold;
+}
+
+ul.jedi-list li {
+    font-style: italic;
 }

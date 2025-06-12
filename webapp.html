@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Star Wars Web App" />
+    <meta name="author" content="Rachel Hoopes" />
+    <title>Star Wars Trivia Generator</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap + Your Star Wars Theme -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/mystyle.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1 class="site-heading text-center text-faded d-none d-lg-block">
+            <span class="site-heading-upper text-primary mb-3">Explore the Star Wars Galaxy</span>
+            <span class="site-heading-lower">Trivia Generator</span>
+        </h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Star Wars</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="webapp.html">Webapp</a></li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="video.html">Video</a></li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="resume.html">Resume</a></li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="scratch.html">Scratch</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- App Section -->
+    <section class="page-section cta">
+        <div class="container">
+            <div class="cta-inner text-center rounded">
+                <h2 class="section-heading mb-4">
+                    <span class="section-heading-upper">Star Wars Trivia Generator</span>
+                    <span class="section-heading-lower">Use the Force to Learn!</span>
+                </h2>
+
+                <div class="force-section">
+                    <p id="trivia" style="font-size: 20px;">"Do. Or do not. There is no try." – Yoda</p>
+                    <button class="btn btn-primary mt-3" onclick="generateTrivia()">New Trivia</button>
+                </div>
+
+                <a href="index.html" class="btn btn-primary mt-4">← Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-faded text-center py-5">
+        <div class="container">
+            <p class="m-0 small">© Rachel Hoopes 2025</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        const facts = [
+            "Yoda was almost played by a monkey wearing a mask.",
+            "Chewbacca’s voice is a mix of bear, walrus, lion, and badger sounds.",
+            "Darth Vader only has 12 minutes of screen time in A New Hope.",
+            "The word 'Ewok' is never said in Return of the Jedi.",
+            "R2-D2 and C-3PO appear in every Star Wars film except Solo.",
+            "E.T. species appears in The Phantom Menace Senate scene.",
+            "Lightsabers were originally going to be used only by Jedi leaders.",
+            "BB-8 was a fully remote-controlled robot, not just CGI.",
+            "‘The Force’ was originally called ‘The Force of Others’.",
+            "George Lucas’s dog inspired the character of Chewbacca."
+        ];
+
+        function generateTrivia() {
+            const randomIndex = Math.floor(Math.random() * facts.length);
+            document.getElementById("trivia").textContent = facts[randomIndex];
+        }
+    </script>
+
+    <!-- Bootstrap Core JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
